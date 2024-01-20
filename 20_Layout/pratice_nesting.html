@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="../_js/bootstrap.bundle.js"></script>
+    <title>nesting</title>
+    <style>
+        div[class^="col"]{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <img src="./pratice_nesting.jpg">
+    <div class="row">
+        <div class="col-3">
+            <div class="row">
+                <div class="col-12">C1</div>
+            </div>
+            <div class="row">
+                <div class="col-12">C2</div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="row">
+                <div class="col-12">C3</div>
+            </div>
+            <div class="row">
+                <div class="col-12">C4</div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="row">
+                <div class="col-12">C5</div>
+            </div>
+            <div class="row">
+                <div class="col-12">C6</div>
+            </div>
+        </div>
+        <div class="col-3">C7</div>
+    </div>
+</body>
+</html>

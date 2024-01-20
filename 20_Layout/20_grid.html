@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="../_js/bootstrap.bundle.js"></script>
+    <style>
+        div[class^="col"]:nth-child(odd) {
+            background-color: yellow;
+        }
+
+        div[class^="col"]:nth-child(even) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h4>Bootstrap Grids</h4>
+    <p>
+        <a
+            href="https://www.w3schools.com/bootstrap5/bootstrap_grid_basic.php">https://www.w3schools.com/bootstrap5/bootstrap_grid_basic.php</a>
+    </p>
+    <h4>Bootstrap Grid Examples</h4>
+    <p>
+        <a
+            href="https://www.w3schools.com/bootstrap5/bootstrap_grid_examples.php">https://www.w3schools.com/bootstrap5/bootstrap_grid_examples.php</a>
+    </p>
+    <h4>Grid options</h4>
+    <p>
+        <a
+            href="https://getbootstrap.com/docs/5.2/layout/grid/#grid-options">https://getbootstrap.com/docs/5.2/layout/grid/#grid-options</a>
+    </p>
+    <h4>Row columns</h4>
+    <p>
+        <a
+            href="https://getbootstrap.com/docs/5.2/layout/grid/#row-columns">https://getbootstrap.com/docs/5.2/layout/grid/#row-columns</a>
+    </p>
+    <h4>Nesting</h4>
+    <p>
+        <a
+            href="https://getbootstrap.com/docs/5.2/layout/grid/#nesting">https://getbootstrap.com/docs/5.2/layout/grid/#nesting</a>
+    </p>
+    <hr>
+
+
+    <h3>.col</h3>
+    <div class="row">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">13</div>
+    </div>
+    <h3>.col-{數字1~12}</h3>
+    <div class="row">
+        <div class="col-4">1</div>
+        <div class="col-4">2</div>
+        <div class="col-4">3</div>
+        <div class="col-4">多的</div> <!-- 超出12等分的會放在下一列 -->
+    </div>
+    <h3>.col-{數字} 超出12等分</h3><!-- 會自動換到下一列 一列不超出12等分 -->
+    <div class="row">
+        <div class="col-5">1</div>
+        <div class="col-8">2</div>
+    </div>
+    <h3>w3schools</h3>
+    <div class="row">
+        <div class="col-2">tutorial</div>
+        <div class="col-8">content</div>
+        <div class="col-2">ads</div>
+    </div>
+    <!-- 10. 請試著透過 col-* 或者 row-cols-* 的設定，將畫面平分成四欄 -->
+    <h3>pratice: 平分四欄</h3>
+    <div class="row">
+        <div class="col-3">1</div>
+        <div class="col-3">2</div>
+        <div class="col-3">3</div>
+        <div class="col-3">4</div>
+    </div>
+    <h3>pratice: .row-col-{數字1~6}</h3>
+    <div class="row row-cols-2">
+        <div class="col">1-4</div>
+        <div class="col">2-4</div>
+        <div class="col">3-4</div>
+        <div class="col">4-4</div>
+    </div>
+    <!-- 20. 請試著透過 col-斷點-* 的設定當瀏覽器寬度 ≥768px(md) 時，將畫面平分成兩欄 -->
+    <!-- 延伸: 當瀏覽器寬度 ≥992px(lg) 時，將畫面平分成四欄 -->
+    <h3>pratice: 當瀏覽器寬度 ≥768px，分兩欄</h3>
+    <h3>pratice: 當瀏覽器寬度 ≥992px，分四欄</h3>
+    <div class="row">
+        <div class="col-md-6 col-lg-3">1</div>
+        <div class="col-md-6 col-lg-3">2</div>
+        <div class="col-md-6 col-lg-3">3</div>
+        <div class="col-md-6 col-lg-3">4</div>
+    </div>
+    <!-- 30. 觀察現有的網頁，進行巢狀堆疊Grid的練習 -->
+    <h3>nesting巢狀結構</h3>
+    <img src="./nesting.jpg">
+    <div class="row">
+        <div class="col-4">A</div>
+        <div class="col-4">B</div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-12" style="border: 3px solid red;">C</div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="border: 3px solid blue;">D</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="../_js/bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h4>官方網站</h4>
+        <p><a
+                href="https://getbootstrap.com/docs/5.2/components/buttons/#button-tags">https://getbootstrap.com/docs/5.2/components/buttons/#button-tags</a>
+        </p>
+        <p><a
+                href="https://getbootstrap.com/docs/5.2/components/button-group/">https://getbootstrap.com/docs/5.2/components/button-group/</a>
+        </p>
+        <h4>Bootstrap Buttons</h4>
+        <p><a
+                href="https://www.w3schools.com/bootstrap5/bootstrap_buttons.php">https://www.w3schools.com/bootstrap5/bootstrap_buttons.php</a>
+        </p>
+        <h4>Bootstrap Button Groups</h4>
+        <p><a
+                href="https://www.w3schools.com/bootstrap5/bootstrap_button_groups.php">https://www.w3schools.com/bootstrap5/bootstrap_button_groups.php</a>
+        </p>
+
+        <hr>
+
+        <!-- 10. 加入一個 <button> 標籤，並添加類別 .btn  -->
+        <!-- 11. 在上一個按鈕繼續添加類別 .btn-info(class一定要有btn) -->
+        <button class="btn-info">btn</button>
+        <button class="btn btn-info">btn</button>
+        <hr>
+
+        <!-- 20. 加入一個 <a> 標籤，<a> 標籤是否可以套用 .btn 以及 .btn-info ? -->
+        <a href="#" class="btn btn-info">a</a>
+        <hr>
+
+        <!-- 30. 透過 .btn-lg  或者 .btn-sm 來改變按鈕樣式大小(非斷點) -->
+        <button class="btn btn-sm btn-info text-white">btn-sm</button>
+        <button class="btn btn-info text-white">btn</button>
+        <button class="btn btn-lg btn-info text-white">btn-lg</button>
+        <hr>
+
+        <!-- 40. 設置一個 <div> 並套用 .d-grid  -->
+        <!--     接著在 <div> 裡面安排 <button>，觀察 <button> 的變化 -->
+        <div class="d-grid">
+            <button>A</button>
+            <button>B</button>
+            <button>C</button>
+        </div>
+
+        <br>
+
+        <div class="d-grid gap-2">
+            <!-- 在父元素有d-grid的類別時，可使用gap-{數字}產生距離 -->
+            <button class="btn btn-primary">A</button>
+            <button class="btn btn-primary">B</button>
+            <button class="btn btn-primary">C</button>
+        </div>
+        <hr>
+
+        <!-- 50. 設置一個 <div> 並套用 .btn-group  -->
+        <!--     接著在 <div> 裡面安排 <button>，觀察 <button> 的變化 -->
+        <!-- 可應用於頁碼呈現 -->
+        <div class="btn-group">
+            <button class="btn btn-primary">A</button>
+            <button class="btn btn-primary">B</button>
+            <button class="btn btn-primary">C</button>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
